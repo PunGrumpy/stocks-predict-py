@@ -38,7 +38,18 @@ if len(X) < 10:  # adjust this number as necessary
     st.error("Not enough data to train the model.")
 else:
     # Train the model
-    model = train_model(X, y)
+    model, mae, mse, r2, cv_score = train_model(X, y)
+
+    # Display performance metrics
+    st.write(
+        f"""
+            Performance Metrics:
+            * Mean Absolute Error (MAE): {mae:.2f}
+            * Mean Squared Error (MSE): {mse:.2f}
+            * R^2 Score: {r2:.2f}
+            * Cross-Validation Score: {cv_score:.2f}
+        """
+    )
 
     # Save the model
     save_model(model, "models/model.pkl")
