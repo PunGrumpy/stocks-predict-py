@@ -7,6 +7,14 @@ from src.models.train_model import train_model, save_model
 from src.models.predict_model import load_model, make_prediction
 from datetime import date, timedelta
 
+# Set page metadata
+st.set_page_config(
+    page_title="Stock Price Prediction App",
+    page_icon="📈",
+    layout="centered",
+    initial_sidebar_state="auto",
+)
+
 # Mapping of stock symbols to full names and currencies
 stocks = {
     "AAPL": {"name": "Apple Inc.", "currency": "USD"},
