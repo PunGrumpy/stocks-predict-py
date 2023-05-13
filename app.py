@@ -26,9 +26,12 @@ stocks = {
 # Ask user for stock symbol
 ticker = st.selectbox("Select a stock symbol:", list(stocks.keys()))
 
+# Streamlit interface
+st.title(f'Stock Price Prediction for {stocks[ticker]["name"]}')
+
 # Let the user select the number of days
 days = st.slider(
-    "Number of past days to consider:", min_value=15, max_value=120, value=30
+    "Number of past days to consider:", min_value=15, max_value=120, value=30, step=5
 )
 
 # Calculate the start date as 30 days ago
@@ -56,9 +59,6 @@ else:
 
     # Make prediction
     prediction = make_prediction(loaded_model, X[-1:])
-
-    # Streamlit interface
-    st.title(f'Stock Price Prediction for {stocks[ticker]["name"]}')
 
     # Plot the actual values vs predictions using Plotly
     fig = go.Figure()
