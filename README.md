@@ -16,7 +16,7 @@ The project is structured as follows:
 ## How to Run the Application 🏃‍♂️
 
 1. Clone this repository.
-2. Install the required Python packages. You can do this by `running pip install -r requirements.txt`.
+2. Install the required Python packages. You can do this by running `pip install -r requirements.txt`.
 3. Run the Streamlit application by executing `streamlit run app.py`.
 
 ## Contributing 🤝
