@@ -1,4 +1,3 @@
-import datetime
 import streamlit as st
 import plotly.graph_objects as go
 from src.data.data_preparation import fetch_data, preprocess_data
