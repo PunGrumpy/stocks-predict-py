@@ -3,6 +3,7 @@ from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 import numpy as np
 import pickle
+import os
 
 
 def train_model(X, y):
@@ -38,6 +39,7 @@ def train_model(X, y):
 
 
 def save_model(model, path):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
     with open(path, "wb") as f:
         pickle.dump(model, f)
 
