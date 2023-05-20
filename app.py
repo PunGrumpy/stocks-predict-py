@@ -28,6 +28,14 @@ stocks = {
     },
     "BBL.BK": {"name": "Bangkok Bank Public Company Limited", "currency": "THB"},
     "KBANK.BK": {"name": "Kasikornbank Public Company Limited", "currency": "THB"},
+    "CPALL.BK": {"name": "CP ALL Public Company Limited", "currency": "THB"},
+    "GULF.BK": {"name": "Gulf Energy Development Public Company Limited", "currency": "THB"},
+    "PTTEP.BK": {"name": "PTT Exploration and Production Public Company Limited", "currency": "THB"},
+    "SCGP.BK": {"name": "SCG Packaging Public Company Limited", "currency": "THB"},
+    "AOT.BK": {"name": "Airports of Thailand Public Company Limited", "currency": "THB"},
+    "TRUE.BK": {"name": "True Corporation Public Company Limited", "currency": "THB"},
+    "DELTA.BK": {"name": "Delta Electronics (Thailand) Public Company Limited", "currency": "THB"},
+    "BTS.BK": {"name": "BTS Group Holdings Public Company Limited", "currency": "THB"},
 }
 
 # Ask user for stock symbol
